@@ -1,0 +1,139 @@
+/* styles.css */
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #ff7f50, #ff6347);
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Header */
+h1 {
+  font-size: 3rem;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
+}
+
+h2, h3 {
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+/* Categories Section */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  padding: 12px;
+  margin: 10px 0;
+  background-color: #ff4757;
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+}
+
+li:hover {
+  background-color: #ff6b81;
+}
+
+/* Article List Section */
+article {
+  background-color: #2f3542;
+  padding: 20px;
+  margin: 15px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 800px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+article h3 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #ffeb3b;
+}
+
+article p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #dcdde1;
+}
+
+/* Search Bar */
+input[type="text"] {
+  padding: 10px;
+  width: 300px;
+  border-radius: 8px;
+  border: 1px solid #ff7f50;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: #ff6347;
+  box-shadow: 0 0 5px rgba(255, 99, 71, 0.6);
+}
+
+button {
+  background-color: #ff6347;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ff7f50;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  ul {
+    padding-left: 20px;
+  }
+
+  article {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  input[type="text"] {
+    width: 250px;
+  }
+
+  button {
+    width: 100%;
+    font-size: 1.2rem;
+  }
+}
